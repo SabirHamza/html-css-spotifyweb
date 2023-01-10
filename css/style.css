@@ -1,62 +1,80 @@
+:root{
+    --header-height: 100px;
+    --footer-height: 100px;
+    --side-bar-width: 200px;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-footer{
-    height: 100px;
-
-    background-color: palegreen;
-    border: 1px dashed black;
+li{
+    list-style: none;
 }
 
 .top-content{
-    height: calc(100vh - 100px);
-
-    background-color: palegreen;
-    border: 1px dashed black;
-}
-
-.side-bar{
-    width: 200px;
-    height: 100%;
-
-    background-color: bisque;
-    border: 1px dashed black;
+    height: calc(100vh - var(--footer-height));
 }
 
 .main-content{
-    width: calc(100% - 200px);
+    width: calc(100% - var(--side-bar-width));
     height: 100%;
     position: relative;
-
-    background-color: bisque;
-    border: 1px dashed black;
 }
 
 header{
-    height: 100px;
+    height: var(--header-height);
     width: 100%;
     position: absolute;
+    background-color: #080b12;
+    opacity: 0.8;
+}
 
-    background-color: coral;
-    border: 1px dashed black;
+header > div{
+    line-height: var(--header-height);
+    text-align: end;
+    vertical-align: middle;
+}
+
+.upgrade{
+    background-color: inherit;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 
 main{
     height: 100%;
-    padding-top: 120px;
+    padding-top: var(--header-height);
     overflow: auto;
-
-    background-color: violet;
-    border: 1px dashed black;
 }
 
-.box{
-    height: 100px;
-    width: 100px;
+.playlist{
+    padding: 0 5px;
+}
 
-    background-color: yellow;
-    border: 1px dashed black;
+.playlist > img{
+    width: 100%;
+}
+
+.side-bar{
+    width: var(--side-bar-width);
+    height: 100%;
+    background-color: #141922;
+}
+
+.side-container{
+    width: 170px;
+    margin: 0 auto;
+}
+
+.logo{
+    line-height: var(--header-height);
+}
+
+footer{
+    height: var(--footer-height);
 }
