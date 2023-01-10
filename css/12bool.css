@@ -1,5 +1,9 @@
 /* ALIGNMENT */
 
+.d-column{
+	flex-direction: column;
+}
+
 .jc-center {
 	justify-content: center;
 }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/utils.css">
     <link rel="stylesheet" href="./css/12bool.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -12,18 +14,38 @@
 <body>
     <div class="top-content d-flex">
         <div class="side-bar">
-            <div class="side-container">
+            <div class="side-container d-flex d-column">
                 <div class="logo">
                     <img src="./img/logo.svg" alt="">
                 </div>
-                <div class="main-nav"></div>
+                <div class="main-nav">
+                    <ul>
+                        <li><img src="./img/home.svg" alt="">Home</li>
+                        <li><img src="./img/search.svg" alt="">Cerca</li>
+                        <li><img src="./img/libreria.svg" alt="">La tua libreria</li>
+                    </ul>
+                </div>
+                <div class="play-list">
+                    <h3 class="pt2 pb2">Playlist</h3>
+                    <span class="pt1"><i class="fa-solid fa-plus"></i>Crea Playlist</span>
+                    <ul>
+                        <li class="pt2">Nuova Playlist</li>
+                        <li class="pt2">Nuova Playlist</li>
+                        <li class="pt2">Nuova Playlist</li>
+                        <li class="pt2">Nuova Playlist</li>
+                        <li class="pt2">Nuova Playlist</li>
+                        <li class="pt2">Nuova Playlist</li>
+                    </ul>
+                    <div class="account">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main-content">
             <header>
                 <div class="container">
                     <div>
-                        <button class="upgrade">EFFETUA L'UPGRADE</button>
+                        <button class="btn upgrade">EFFETUA L'UPGRADE</button>
                     </div>
                 </div>
             </header>
@@ -40,68 +62,88 @@
                         </ul>
                     </nav>
                     <div>
-                        <h2>Recently played</h2>
+                        <h2 class="mt3 mb3">Recently played</h2>
                         <div class="row">
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
+                                <div class="playlist text-center">
                                     <img src="./img/metal_lifting.jpg" alt="">
+                                    <h3>Heavy Metal</h3>
+                                    <span>Subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <h3>Stranger Thing vol. 1 (A Netflix Original Series Soundtrack)</h3>
+                                    <span>Kyle dixon & Michael Stain</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <h3>A quiet place</h3>
+                                    <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <h3>Split</h3>
+                                    <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <h3>A cure of Wellnes</h3>
+                                    <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <h3>Sinister</h3>
+                                    <span>subtitle</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h2>Creato per john Doe</h2>
-                        <span>Piu ascolti, più saranno accurati i sugerimenti</span>
+                        <div class="mt4 mb3">
+                            <h2>Creato per john Doe</h2>
+                            <span>Piu ascolti, più saranno accurati i sugerimenti</span>
+                        </div>
                         <div class="row">
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/cure.jpeg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <h3>Relase Radar</h3>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist">
-                                    <img src="./img/cure.jpeg" alt="">
+                                <div class="playlist text-center">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <h3>Daily Mix 1</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h2>Artisti più Ascoltati</h2>
-                        <span>Piu ascolti, più saranno accurati i sugerimenti</span>
+                        <div class="mt4 mb3">
+                            <h2>Artisti più Ascoltati</h2>
+                            <span>Piu ascolti, più saranno accurati i sugerimenti</span>
+                        </div>
                         <div class="row">
-                            <div class="col-2">
-                                <div class="playlist">
-                                    <img src="./img/youg.jpeg" alt="">
+                            <div class="col-2 col-md-3 col-sm-6">
+                                <div class="playlist artist text-center">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h3>Ludovico Einaudi</h3>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="playlist">
+                            <div class="col-2 col-md-3 col-sm-6">
+                                <div class="playlist artist text-center">
                                     <img src="./img/youg.jpeg" alt="">
+                                    <h3>Lana Del Rey</h3>
                                 </div>
                             </div>
                         </div>

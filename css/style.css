@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+.text-center{
+    text-align: center;
+}
+
 li{
     list-style: none;
 }
@@ -38,7 +42,7 @@ header > div{
     vertical-align: middle;
 }
 
-.upgrade{
+.btn.upgrade{
     background-color: inherit;
     color: white;
     border-color: white;
@@ -60,10 +64,15 @@ main{
     width: 100%;
 }
 
+.artist > img{
+    border-radius: 50%;
+}
+
 .side-bar{
     width: var(--side-bar-width);
     height: 100%;
     background-color: #141922;
+    color: #6f6f6f;
 }
 
 .side-container{
@@ -73,6 +82,30 @@ main{
 
 .logo{
     line-height: var(--header-height);
+}
+
+.main-nav{
+    margin: 0 -5px;
+}
+
+.main-nav img{
+    height: 25px;
+    vertical-align: middle;
+    margin: 5px;
+    opacity: 0.5;
+}
+
+.fa-solid.fa-plus{
+    padding: 10px;
+    margin-right: 5px;
+    color: #080b12;
+    background-color: #6f6f6f;
+    vertical-align: middle;
+}
+
+.account{
+    margin-top: auto;
+    height: 70px;
 }
 
 footer{
