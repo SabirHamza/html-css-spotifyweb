@@ -4,6 +4,10 @@
 	flex-direction: column;
 }
 
+.a-center{
+	align-items: center;
+}
+
 .jc-center {
 	justify-content: center;
 }
@@ -48,6 +52,10 @@
 
 .d-none {
 	display: none;
+}
+
+.p-relative{
+	position: relative;
 }
 
 /* CONTAINER & ROW */
