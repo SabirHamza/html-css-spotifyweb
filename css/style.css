@@ -25,6 +25,7 @@ li{
 
 .top-content{
     height: calc(100vh - var(--footer-height));
+    width: 100vw;
 }
 
 .main-content{
@@ -81,17 +82,13 @@ main span{
 .side-bar{
     width: var(--side-bar-width);
     height: 100%;
+    padding: 10px;
     background-color: #000000;
     color: #6f6f6f;
 }
 
-.side-container{
-    width: 170px;
-    margin: 0 auto;
-}
-
 .logo{
-    line-height: var(--header-height);
+    height: var(--header-height);
 }
 
 .logo > img{
@@ -173,4 +170,19 @@ footer{
 
 .volume.b-white{
     width: 50%;
+}
+
+@media screen and (max-width: 600px){
+    .d-block{
+        display: none;
+    }
+
+    .d-none{
+        display: block;
+    }
+
+    .side-bar{
+        max-width: fit-content;
+    }
+
 }
