@@ -19,6 +19,15 @@ li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+li:hover{
+    color: white;
+}
+
 .white{
     color: white;
 }
@@ -31,6 +40,7 @@ li{
 .main-content{
     width: calc(100% - var(--side-bar-width));
     height: 100%;
+    flex-grow: 1;
     position: relative;
 }
 
@@ -63,12 +73,40 @@ main{
     background-color: #141922;
 }
 
+.l-green{
+    height: 5px;
+    width: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color:#141922;
+}
+
+a:hover .l-green{
+    background-color: #598128;
+}
+
 .playlist{
     padding: 0 5px;
+    position: relative;
+}
+
+.playlist:hover .play{
+    display: block;
 }
 
 .playlist > img{
     width: 100%;
+}
+
+.playlist > img:hover{
+    opacity: 0.5;
+}
+
+.play{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50% , -50%);
 }
 
 .artist > img{
@@ -82,7 +120,6 @@ main span{
 .side-bar{
     width: var(--side-bar-width);
     height: 100%;
-    padding: 10px;
     background-color: #000000;
     color: #6f6f6f;
 }
@@ -103,12 +140,22 @@ main span{
     opacity: 0.5;
 }
 
+.b-green:hover{
+    border-left: 5px solid #598128;
+    padding: 0 5px;
+}
+
 .fa-solid.fa-plus{
     padding: 10px;
     margin-right: 5px;
     color: #080b12;
     background-color: #6f6f6f;
     vertical-align: middle;
+}
+
+.play-list{
+    min-width: 200px;
+    overflow: auto;
 }
 
 footer{
@@ -148,7 +195,11 @@ footer{
 
 .timeline.b-white{
     width: 10vw;
-    position: absolute;
+    position: relative;
+}
+
+.timeline.b-white:hover{
+    background-color: #598128;
 }
 
 .circle{
@@ -185,4 +236,7 @@ footer{
         max-width: fit-content;
     }
 
+    .player{
+        justify-content: space-around;
+    }
 }

@@ -15,15 +15,15 @@
 <body>
     <div class="top-content d-flex">
         <div class="side-bar d-flex d-column">
-            <div class="logo d-flex a-center">
+            <div class="logo d-flex a-center pl2">
                 <img class="d-block" src="./img/logo.svg" alt="">
                 <img class="d-none" src="./img/logo-small.svg" alt="">
             </div>
             <div class="main-nav">
                 <ul class="d-block">
-                    <li><img src="./img/home.svg" alt=""><span>Home</span></li>
-                    <li><img src="./img/search.svg" alt=""><span>Cerca</span></li>
-                    <li><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></li>
+                    <li class="pl2 b-green"><img src="./img/home.svg" alt=""><span>Home</span></li>
+                    <li class="pl2 b-green"><img src="./img/search.svg" alt=""><span>Cerca</span></li>
+                    <li class="pl2 b-green"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></li>
                 </ul>
                 <ul class="d-none">
                     <li><img src="./img/home.svg" alt=""></li>
@@ -31,9 +31,11 @@
                     <li><img src="./img/libreria.svg" alt=""></li>
                 </ul>
             </div>
-            <div class="play-list mt3 d-block">
-                <h3 class="pb2">Playlist</h3>
+            <div class="d-block pl2">
+                <h3 class="pb2 white">Playlist</h3>
                 <span class="pt1"><i class="fa-solid fa-plus"></i>Crea Playlist</span>
+            </div>
+            <div class="play-list mt3 d-block pl2">
                 <ul>
                     <li class="pt2">Nuova Playlist</li>
                     <li class="pt2">Nuova Playlist</li>
@@ -57,58 +59,104 @@
             <main>
                 <div class="container">
                     <nav>
-                        <span>
-                            <ul class="row jc-center">
-                                <li class="p2">PODCAST<span></span></li>
-                                <li class="p2">IN EVIDENZA<span></span></li>
-                                <li class="p2">CLASSIFICA<span></span></li>
-                                <li class="p2">GENERI E MOOD<span></span></li>
-                                <li class="p2">NUOVE USCITE<span></span></li>
-                                <li class="p2">SCOPRI<span></span></li>
-                            </ul>
-                        </span>
+                        <ul class="row jc-center">
+                            <a href="#">
+                                <li class="p2">PODCAST</li>
+                                <div class="l-green"></div>
+                            </a>
+                            <a href="#">
+                                <li class="p2">IN EVIDENZA</li>
+                                <div class="l-green"></div>
+                            </a>
+                            <a href="#">
+                                <li class="p2">CLASSIFICA</li>
+                                <div class="l-green"></div>
+                            </a>
+                            <a href="#">
+                                <li class="p2">GENERI E MOOD</li>
+                                <div class="l-green"></div>
+                            </a>
+                            <a href="#">
+                                <li class="p2">NUOVE USCITE</li>
+                                <div class="l-green"></div>
+                            </a>
+                            <a href="#">
+                                <li class="p2">SCOPRI</li>
+                                <div class="l-green"></div>
+                            </a>
+                        </ul>
                     </nav>
                     <div class="white">
-                        <h2 class="mt3 mb3">Recently played</h2>
+                        <h2 class="mt4 mb3">Recently played</h2>
                         <div class="row">
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/metal_lifting.jpg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>Heavy Metal</h3>
                                     <span>Subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/stranger.jpeg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>Stranger Thing vol. 1 (A Netflix Original Series Soundtrack)</h3>
                                     <span>Kyle dixon & Michael Stain</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/aquietplace.jpeg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>A quiet place</h3>
                                     <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/split.jpeg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>Split</h3>
                                     <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/cure.jpeg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>A cure of Wellnes</h3>
                                     <span>subtitle</span>
                                 </div>
                             </div>
                             <div class="col-2 col-md-3 col-sm-6">
-                                <div class="playlist text-center">
+                                <div class="playlist">
                                     <img src="./img/sinister.jpeg" alt="">
+                                    <div class="play d-none white">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
                                     <h3>Sinister</h3>
                                     <span>subtitle</span>
                                 </div>
@@ -182,11 +230,12 @@
                     </div>
                     <div class="d-flex">
                         <div>1:35</div>
-                        <div class="p-relative p2">
-                            <div class="timeline b-white">
-                                <div class="circle b-white"></div>
+                        <div class="p2">
+                            <div class="timeline b-grey">
+                                <div class="timeline b-white">
+                                    <div class="circle b-white"></div>
+                                </div>
                             </div>
-                            <div class="timeline b-grey"></div>
                         </div>
                         <div>4:35</div>
                     </div>
